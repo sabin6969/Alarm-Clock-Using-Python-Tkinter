@@ -34,8 +34,8 @@ class Alarm:
                     lst=[]
                     lst=alarm_time.split(":")
                     try:
-                        hour_integer=int(lst[1])
-                        minute_integer=int(lst[2])
+                        hour_integer=int(lst[0])
+                        minute_integer=int(lst[1])
                         messagebox.showinfo("Sucess","Alarm Set Sucess")
                         current_time=time.strftime("%H:%M")
                         while alarm_time !=current_time:
